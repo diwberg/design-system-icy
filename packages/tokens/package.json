@@ -13,8 +13,8 @@
   "author": "Diwberg",
   "license": "ISC",
   "devDependencies": {
-    "@icy-ui/ts-config": "*",
     "@icy-ui/eslint-config": "*",
+    "@icy-ui/ts-config": "*",
     "tsup": "^6.7.0",
     "typescript": "^5.1.0"
   }

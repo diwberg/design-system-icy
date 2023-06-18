@@ -3,12 +3,14 @@ interface TokensGridProps {
   token: Record<string, string>
   hasRemValue?: boolean
   hasGraphicShow?: boolean
+  hasGraphicFont?: boolean
 }
 
 export function TokensGrid({
   token,
   hasRemValue = false,
   hasGraphicShow = false,
+  hasGraphicFont = false,
 }: TokensGridProps) {
   function calcRemValueInPixel(value: string) {
     return String(Number(value.replace('rem', '')) * 16) + 'px'
@@ -38,6 +40,17 @@ export function TokensGrid({
                       paddingLeft: calcRemValueInPixel(value),
                     }}
                   ></span>
+                </td>
+              )}
+              {hasGraphicFont && (
+                <td>
+                  <p
+                    style={{
+                      fontSize: calcRemValueInPixel(value),
+                    }}
+                  >
+                    ABCD
+                  </p>
                 </td>
               )}
             </tr>
