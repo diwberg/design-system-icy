@@ -13,7 +13,8 @@ const config = {
     options: {},
   },
   docs: {
-    autodocs: "tag",
+    autodocs: 'true',
+    defaultNAme: 'Docs'
   },
 };
 export default config;

@@ -3,8 +3,9 @@ import { Button, ButtonProps } from '@icy-ui/react'
 import { ArrowRight } from 'phosphor-react'
 
 export default {
-  title: 'Form / Button',
+  title: 'Form/Button',
   component: Button,
+  tags: ['autodocs'],
   args: {
     children: 'Exemple',
   },
