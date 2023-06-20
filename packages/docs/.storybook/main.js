@@ -21,5 +21,13 @@ const config = {
     autodocs: true,
     defaultName: 'Component',
   },
+
+  viteFinal: (config, { configType }) => {
+    if(configType === 'PRODUCTION') {
+      config.base = '/design-system-icy/'
+    }
+
+    return config
+  }
 };
 export default config;
