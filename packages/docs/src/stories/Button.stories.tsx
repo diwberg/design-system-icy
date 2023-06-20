@@ -9,46 +9,29 @@ export default {
   args: {
     children: 'Exemple',
   },
+  argTypes: {
+    variant: {
+      options: ['primary', 'secondary', 'success', 'cancel', 'warning'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      options: ['sm', 'md', 'lg'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    onClick: { action: 'clicked' },
+  },
 } as Meta<ButtonProps>
 
 export const Primary: StoryObj<ButtonProps> = {}
-
-export const Secundary: StoryObj<ButtonProps> = {
-  args: {
-    variant: 'secundary',
-    children: 'New',
-    disabled: false,
-  },
-}
-
-export const Success: StoryObj<ButtonProps> = {
-  args: {
-    variant: 'success',
-    children: 'Success',
-  },
-}
-
-export const Cancel: StoryObj<ButtonProps> = {
-  args: {
-    variant: 'cancel',
-    children: 'Cancel',
-  },
-}
-
-export const Warning: StoryObj<ButtonProps> = {
-  args: {
-    variant: 'warning',
-    children: 'Warning',
-  },
-}
-
-export const Disabled: StoryObj<ButtonProps> = {
-  args: {
-    variant: 'primary',
-    children: 'Disabled',
-    disabled: true,
-  },
-}
 
 export const WithIcons: StoryObj<ButtonProps> = {
   args: {

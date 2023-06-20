@@ -12,7 +12,7 @@ export default {
 
 export const Primary: StoryObj<MultiStepProps> = {}
 
-export const Decorators: StoryObj<MultiStepProps> = {
+export const UseCase: StoryObj<MultiStepProps> = {
   decorators: [
     (story) => (
       <Box

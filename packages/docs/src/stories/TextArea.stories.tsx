@@ -13,7 +13,7 @@ export const Primary: StoryObj<TextAreaProps> = {
   },
 }
 
-export const Decorators: StoryObj<TextAreaProps> = {
+export const UseCase: StoryObj<TextAreaProps> = {
   decorators: [
     (story) => (
       <Box

@@ -8,8 +8,8 @@ export interface BoxProps extends ComponentProps<typeof Box>{
 export const Box = styled('div', {
     padding: '$4',
     borderRadius: '$md',
-    backgroundColor: "$gray-800",
-    border: '1px solid gray-600',
-    color: 'White'
+    backgroundColor: "$zinc-800",
+    border: '0 0 0 2px zinc-800',
+    color: '$white'
 
 })

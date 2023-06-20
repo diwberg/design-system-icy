@@ -26,32 +26,28 @@ export const ButtonContainer = styled('button', {
     variants: {
         variant:{
             primary: {
-                color: '$gray-100',
-                background: '$purple-700',
+                color: '$zinc-100',
+                background: '$primary-700',
 
                 transition: 'all 0.2s',
                 '&:not(:disabled):hover': {
                     color: '$white',
-                    background: '$purple-500',
+                    background: '$primary-500',
                 },
             },
-            secundary: {
-                color: '$gray-300',
-                border: '2px solid $purple-700',
+            secondary: {
+                color: '$zinc-300',
+                border: '2px solid $primary-700',
 
                 transition: 'all 0.2s',
                 '&:not(:disabled):hover': {
                     color: '$white',
-                    background: '$purple-700',
+                    background: '$primary-700',
                 },
-                '&:disabled': {
-                    color: '$gray-900',
-                    borderColor: '$gray-800',
-                }
             },
             
             success: {
-                color: '$gray-100',
+                color: '$zinc-300',
                 background: '$green-700',
 
                 transition: 'all 0.2s',
@@ -62,7 +58,7 @@ export const ButtonContainer = styled('button', {
             },
             
             cancel: {
-                color: '$gray-100',
+                color: '$zinc-300',
                 background: '$red-700',
 
                 transition: 'all 0.2s',
@@ -73,13 +69,13 @@ export const ButtonContainer = styled('button', {
             },
 
             warning: {
-                color: '$gray-100',
-                background: '$yellow-700',
+                color: '$zinc-200',
+                background: '$orange-700',
 
                 transition: 'all 0.2s',
                 '&:not(:disabled):hover': {
                     color: '$white',
-                    background: '$yellow-500',
+                    background: '$orange-500',
                 },
             },
         },

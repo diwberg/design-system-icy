@@ -5,7 +5,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   all: 'unset',
   width: '$6',
   height: '$6',
-  backgroundColor: '$gray-900',
+  backgroundColor: '$zinc-900',
   borderRadius: '$xs',
   lineHeight: 0,
   cursor: 'pointer',
@@ -14,7 +14,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  border: '2px solid $gray-900',
+  border: '2px solid $zinc-900',
   transition: 'all 0.3s',
 
   '&:disabled': {
@@ -23,11 +23,12 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   },
 
   '&:not(:disabled):focus': {
-    border: '2px solid $purple-700',
+    border: '2px solid $primary-700',
   },
-
+  
   '&[data-state="checked"]': {
-    background: '$purple-700',
+    background: '$primary-700',
+    border: '2px solid $primary-700',
   },
 
 })

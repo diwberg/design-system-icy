@@ -1,16 +1,16 @@
 import { styled } from "../../styles";
 
 export const TextInputContainer = styled('div', {
-  backgroundColor: '$gray-900',
+  backgroundColor: '$zinc-900',
   padding: '$3 $4',
   borderRadius: '$sm',
   boxSizing: 'border-box',
-  border: '2px solid $gray-900',
+  border: '2px solid $zinc-900',
   display: 'flex',
   alignItems: 'baseline',
 
   '&:has(input:focus)': {
-    borderColor: '$purple-700'
+    borderColor: '$primary-700'
   },
   '&:has(input:disabled)': {
     opacity: 0.2,
@@ -21,8 +21,11 @@ export const TextInputContainer = styled('div', {
 export const Prefix = styled('span', {
   fontFamily: '$default',
   fontSize: '$sm',
-  color: '$gray-500',
-  fontWeight: '$regular'
+  color: '$zinc-400',
+  fontWeight: '$regular',
+  paddingRight: '$1',
+  whiteSpace: 'nowrap',
+
 })
 
 export const Input = styled('input', {
@@ -33,6 +36,7 @@ export const Input = styled('input', {
   background: 'transparent',
   border: 0,
   width: '100%',
+  overflow: 'hidden',
 
   '&:focus': {
     outline: 'none',

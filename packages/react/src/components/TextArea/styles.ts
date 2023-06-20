@@ -1,16 +1,16 @@
 import { styled } from "../../styles";
 
 export const TextContainer = styled('div', {
-  backgroundColor: '$gray-900',
+  backgroundColor: '$zinc-900',
   padding: '$3 $4',
   borderRadius: '$sm',
   boxSizing: 'border-box',
-  border: '2px solid $gray-900',
+  border: '2px solid $zinc-900',
   display: 'flex',
   alignItems: 'baseline',
 
   '&:has(textarea:focus)': {
-    borderColor: '$purple-700'
+    borderColor: '$primary-700'
   },
   '&:has(textarea:disabled)': {
     opacity: 0.2,
