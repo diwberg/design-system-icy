@@ -13,3 +13,5 @@ export const Box = styled('div', {
     color: '$white'
 
 })
+
+Box.displayName = 'Box'
